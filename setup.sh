@@ -199,9 +199,9 @@ if [ -n "$github_user" ]; then
     read -r -p "GitHub Repo Name [zmk-config]: " repo_name
     if [ -z "$repo_name" ]; then repo_name="zmk-config"; fi
 
-    read -r -p "GitHub Repo [https://github.com/${github_user}/${repo_name}.git]: " github_repo
+    read -r -p "GitHub Repo [https://github.com/sergeybaklanov/firm-config.git]: " github_repo
 
-    if [ -z "$github_repo" ]; then github_repo="https://github.com/${github_user}/${repo_name}.git"; fi
+    if [ -z "$github_repo" ]; then github_repo="https://github.com/sergeybaklanov/firm-config.git"; fi
 else
     repo_name="zmk-config"
 fi
@@ -239,9 +239,9 @@ cd ${repo_name}
 pushd config
 
 if [ "$keyboard_shield" == "y" ]; then
-    url_base="https://raw.githubusercontent.com/zmkfirmware/zmk/main/app/boards/shields/${keyboard_basedir}"
+    url_base="https://github.com/sergeybaklanov/firmware/tree/master/app/boards/shields/${keyboard_basedir}"
 else
-    url_base="https://raw.githubusercontent.com/zmkfirmware/zmk/main/app/boards/${keyboard_arch}/${keyboard_basedir}"
+    url_base="https://github.com/sergeybaklanov/firmware/tree/master/app/boards/${keyboard_arch}/${keyboard_basedir}"
 fi
 
 echo "Downloading config file (${url_base}/${keyboard}.conf)"
