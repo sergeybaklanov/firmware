@@ -1,0 +1,8 @@
+file_format: "1"
+id: key66
+name: key66
+type: shield
+url: https://github.com/q123321a
+requires: [makerdiary_nrf52840_m2]
+features:
+  - keys
