@@ -239,9 +239,9 @@ cd ${repo_name}
 pushd config
 
 if [ "$keyboard_shield" == "y" ]; then
-    url_base="https://github.com/sergeybaklanov/firmware/tree/master/app/boards/shields/${keyboard_basedir}"
+    url_base="https://github.com/zmkfirmware/zmk/tree/main/app/boards/shields/${keyboard_basedir}"
 else
-    url_base="https://github.com/sergeybaklanov/firmware/tree/master/app/boards/${keyboard_arch}/${keyboard_basedir}"
+    url_base="https://github.com/zmkfirmware/zmk/tree/main/app/boards/${keyboard_arch}/${keyboard_basedir}"
 fi
 
 echo "Downloading config file (${url_base}/${keyboard}.conf)"
